@@ -5,44 +5,44 @@ import { getReplicaPort } from "dfx-terminal-commands";
 import {IDL} from "@dfinity/candid";
 
 /**
- * Represents the data structure for storing run time system (rts) data.
- * @property {bigint} rts_stable_memory_size - size of used stable memory in 65536 bytes pages
- * @property {bigint} rts_memory_size - total memory size of a canister in bytes
- * @property {bigint} rts_total_allocation - all time accumulative amount of memory allocated in bytes
- * @property {bigint} rts_reclaimed - all time accumulative amount of memory reclaimed in bytes
- * @property {bigint} rts_heap_size - size of used heap memory in bytes
- * @property {bigint} rts_collector_instructions - Wasm instructions used by garbage collector in the last update function call 
- * @property {bigint} rts_mutator_instructions - total Wasm instructions used by the last called update function, except for garbage collection
+ * Represents the data structure for storing rts data.
  */
 export declare type RtsData = {
+    /** size of used stable memory in 65536 bytes pages */
     rts_stable_memory_size: bigint;
+    /** total memory size of a canister in bytes */
     rts_memory_size: bigint;
+    /** all time accumulative amount of memory allocated in bytes */
     rts_total_allocation: bigint;
+    /** all time accumulative amount of memory reclaimed in bytes */
     rts_reclaimed: bigint;
+    /** size of used heap memory in bytes */
     rts_heap_size: bigint;
+    /** Wasm instructions used by garbage collector in the last update function call  */
     rts_collector_instructions: bigint;
+    /** total Wasm instructions used by the last called update function, except for garbage collection */
     rts_mutator_instructions: bigint;
 };
 
 /**
  * Represents the data structure for measuring resource usage.
- * @property {bigint} rts_stable_memory_size - size of used stable memory in 65536 bytes pages
- * @property {bigint} rts_memory_size - total memory size of a canister in bytes
- * @property {bigint} rts_total_allocation - all time accumulative amount of memory allocated in bytes
- * @property {bigint} rts_reclaimed - all time accumulative amount of memory reclaimed in bytes
- * @property {bigint} rts_heap_size - size of used heap memory in bytes
- * @property {bigint} instruction_count - Wasm instructions used by operations measured with ExperimentalInternetComputer.countInstructions()
- * @property {bigint} rts_collector_instructions - Wasm instructions used by garbage collector in the last update function call 
- * @property {bigint} rts_mutator_instructions - total Wasm instructions used by the last called update function, except for garbage collection
  */
 export declare type MeasurementData = {
+    /** size of used stable memory in 65536 bytes pages */
     rts_stable_memory_size: bigint;
+    /** total memory size of a canister in bytes */
     rts_memory_size: bigint;
+    /** all time accumulative amount of memory allocated in bytes */
     rts_total_allocation: bigint;
+    /** all time accumulative amount of memory reclaimed in bytes */
     rts_reclaimed: bigint;
+    /** size of used heap memory in bytes */
     rts_heap_size: bigint;
+    /** Wasm instructions used by operations measured with ExperimentalInternetComputer.countInstructions() */
     instruction_count: bigint;
+    /** Wasm instructions used by garbage collector in the last update function call  */
     rts_collector_instructions: bigint;
+    /** total Wasm instructions used by the last called update function, except for garbage collection */
     rts_mutator_instructions: bigint;
 };
 

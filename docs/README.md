@@ -1,4 +1,4 @@
-**motoko-benchmarking-ts v1.0.0** • **Docs**
+[**motoko-benchmarking-ts v1.0.0**](README.md) • **Docs**
 
 ***
 

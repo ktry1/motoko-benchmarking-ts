@@ -2,7 +2,7 @@
 
 ***
 
-[motoko-benchmarking-ts v1.0.0](../README.md) / measureDifference
+[motoko-benchmarking-ts v1.0.0](../globals.md) / measureDifference
 
 # Function: measureDifference()
 
@@ -36,4 +36,4 @@ instruction_count and rts_mutator_instructions are not substracted because they 
 
 ## Defined in
 
-index.ts:106
+[index.ts:107](https://github.com/ktry1/motoko-benchmarking-ts/blob/358ac8e3b4570fb43e76bccebf75f01c614e08ff/index.ts#L107)

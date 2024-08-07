@@ -2,7 +2,7 @@
 
 ***
 
-[motoko-benchmarking-ts v1.0.0](../README.md) / saveToExcelCustom
+[motoko-benchmarking-ts v1.0.0](../globals.md) / saveToExcelCustom
 
 # Function: saveToExcelCustom()
 
@@ -40,4 +40,4 @@ array of headers that the sheets will have
 
 ## Defined in
 
-index.ts:361
+[index.ts:362](https://github.com/ktry1/motoko-benchmarking-ts/blob/358ac8e3b4570fb43e76bccebf75f01c614e08ff/index.ts#L362)

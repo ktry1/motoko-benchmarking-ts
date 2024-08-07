@@ -2,7 +2,7 @@
 
 ***
 
-[motoko-benchmarking-ts v1.0.0](../README.md) / purifyMeasurementData
+[motoko-benchmarking-ts v1.0.0](../globals.md) / purifyMeasurementData
 
 # Function: purifyMeasurementData()
 
@@ -34,4 +34,4 @@ When you have a batch element adding function like pseudocode: "public func batc
 
 ## Defined in
 
-index.ts:147
+[index.ts:148](https://github.com/ktry1/motoko-benchmarking-ts/blob/358ac8e3b4570fb43e76bccebf75f01c614e08ff/index.ts#L148)

@@ -2,7 +2,7 @@
 
 ***
 
-[motoko-benchmarking-ts v1.0.0](../README.md) / makeIdentity
+[motoko-benchmarking-ts v1.0.0](../globals.md) / makeIdentity
 
 # Function: makeIdentity()
 
@@ -18,4 +18,4 @@ a new Secp256k1KeyIdentity
 
 ## Defined in
 
-index.ts:54
+[index.ts:55](https://github.com/ktry1/motoko-benchmarking-ts/blob/358ac8e3b4570fb43e76bccebf75f01c614e08ff/index.ts#L55)

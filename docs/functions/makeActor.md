@@ -2,7 +2,7 @@
 
 ***
 
-[motoko-benchmarking-ts v1.0.0](../README.md) / makeActor
+[motoko-benchmarking-ts v1.0.0](../globals.md) / makeActor
 
 # Function: makeActor()
 
@@ -36,4 +36,4 @@ actor - an actor to interact with local canister
 
 ## Defined in
 
-index.ts:79
+[index.ts:80](https://github.com/ktry1/motoko-benchmarking-ts/blob/358ac8e3b4570fb43e76bccebf75f01c614e08ff/index.ts#L80)

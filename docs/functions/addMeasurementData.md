@@ -2,7 +2,7 @@
 
 ***
 
-[motoko-benchmarking-ts v1.0.0](../README.md) / addMeasurementData
+[motoko-benchmarking-ts v1.0.0](../globals.md) / addMeasurementData
 
 # Function: addMeasurementData()
 
@@ -26,4 +26,4 @@ Can be useful if you are making multiple update function calls and want to sum u
 
 ## Defined in
 
-index.ts:169
+[index.ts:170](https://github.com/ktry1/motoko-benchmarking-ts/blob/358ac8e3b4570fb43e76bccebf75f01c614e08ff/index.ts#L170)

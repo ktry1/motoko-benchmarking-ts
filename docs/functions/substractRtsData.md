@@ -2,7 +2,7 @@
 
 ***
 
-[motoko-benchmarking-ts v1.0.0](../README.md) / substractRtsData
+[motoko-benchmarking-ts v1.0.0](../globals.md) / substractRtsData
 
 # Function: substractRtsData()
 
@@ -22,4 +22,4 @@ A function to substract two RtsData objects.
 
 ## Defined in
 
-index.ts:220
+[index.ts:221](https://github.com/ktry1/motoko-benchmarking-ts/blob/358ac8e3b4570fb43e76bccebf75f01c614e08ff/index.ts#L221)
