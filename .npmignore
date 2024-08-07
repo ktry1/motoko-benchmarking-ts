@@ -1,0 +1,11 @@
+# Exclude documentation
+docs/
+
+# Exclude source files and build configurations
+typedoc.json
+
+# Exclude Git and node modules
+.git/
+node_modules/
+.npmignore
+.gitignore
