@@ -211,11 +211,44 @@ console.log(`All done!`);
 main();
 ```
 
-### Custom usage examples
+### Custom usage
 ---
-#### This module supports making measurements of a any type: a single function call or multiple function calls. Using RtsData custom types for tests if more values will be added to Prim.
+#### Functions for making custom benchmarks
+```
+//A function to get current rts data from an actor (if it complies with the needed interface)
+async function getRtsData(actor: ActorSubclass<any>) : Promise<RtsData> 
 
-#### Multiple function calls:
+//A function to measure the difference between the MeasurementData before and after update function call.
+function measureDifference(new_values: RtsData, prev_values: RtsData, instruction_count: bigint) : MeasurementData
+
+//A function to measure the difference between the RtsData before and after update function call.
+export function measureDifferenceRts(new_values: RtsData, prev_values: RtsData) : RtsData
+
+//A function for when you need to know the pure resource usage of operation by substracting resource usage of needed utils
+function purifyMeasurementData(data: MeasurementData, base: MeasurementData) : MeasurementData 
+
+//A function for getting a sum of all properties of 2 MeasurementData objects.
+function addMeasurementData(data_1: MeasurementData, data_2: MeasurementData) : MeasurementData
+
+//A function for getting a sum of all properties of 2 RtsData objects.
+function addRtsData(data_1: RtsData, data_2: RtsData) : RtsData 
+
+//A function to substract two MeasurementData objects.
+function substractMeasurementData(data_1: MeasurementData, data_2: MeasurementData) : MeasurementData
+
+//A function to substract two RtsData objects.
+function substractRtsData(data: RtsData, base: RtsData) : RtsData 
+
+//A function to save 2D array of RtsData to the Excel file.
+async function saveToExcelRts(file_path: string, sheet_names: string[], headers: string[], data: RtsData[][])
+
+//A function to save your custom data type to excel table. Useful if you want to conduct your own tests with different properties.
+async function saveToExcelCustom<T extends Record<string, unknown>>(file_path: string, rows:string[], sheet_names: string[], headers: string[], data: T[][])
+```
+
+#### Examples of custom usage
+
+#### Measuring multiple function calls resource usage:
 ```
 ...
 let totalUsage: MeasurementData = {
@@ -237,7 +270,8 @@ for (let i = 0; i < numberOfCalls; i++) {
 console.log(totalUsage);
 ...
 ```
-#### Using RtsData
+
+#### Using RtsData:
 ```
 let rtsDataPrev = await getRtsData(actor);
 await actor.add_batch([0n, 1n]);
